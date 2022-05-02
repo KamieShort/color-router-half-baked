@@ -2,6 +2,7 @@ import {
   Link,
   Redirect,
   BrowserRouter as Router,
+  useParams,
   Route,
 } from 'react-router-dom';
 
@@ -9,6 +10,7 @@ import styles from './App.css';
 
 function RGB() {
   // 🚨 Get values for r, g, and b from params
+  const { r, g, b } = useParams;
   // 🚨 Uncomment next lines after importing
   // return (
   // <div
