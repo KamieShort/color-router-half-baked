@@ -1,10 +1,10 @@
-import { Switch } from 'react-router-dom';
 import {
   Link,
   Redirect,
   BrowserRouter as Router,
   useParams,
   Route,
+  Switch,
 } from 'react-router-dom';
 
 import styles from './App.css';
@@ -27,8 +27,9 @@ function ScreenColor() {
   return (
     <div>
       <Switch>
-        <Route exact path="rgb/:r/:g/:b"></Route>
-        <RGB />
+        <Route exact path="rgb/:r/:g/:b">
+          <RGB />
+        </Route>
       </Switch>
     </div>
   );
